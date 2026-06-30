@@ -5,66 +5,99 @@
   <title>Carl Botchwey – PhD Candidate in Accounting</title>
   <style>
     body {
+      margin: 0;
       font-family: Arial, sans-serif;
-      max-width: 900px;
-      margin: 40px auto;
-      line-height: 1.6;
-      color: #222;
-    }
-    nav {
       display: flex;
-      gap: 25px;
-      margin-bottom: 30px;
-      font-size: 18px;
+      background: #f7f7f7;
     }
-    nav a {
+
+    /* SIDEBAR */
+    .sidebar {
+      width: 260px;
+      background: #ffffff;
+      padding: 30px 20px;
+      height: 100vh;
+      position: fixed;
+      border-right: 1px solid #ddd;
+      box-shadow: 2px 0 5px rgba(0,0,0,0.05);
+    }
+
+    .sidebar img {
+      width: 100%;
+      border-radius: 6px;
+      margin-bottom: 20px;
+    }
+
+    .sidebar h2 {
+      margin: 10px 0 5px;
+      font-size: 22px;
+    }
+
+    .sidebar p {
+      margin: 0 0 20px;
+      font-size: 14px;
+      color: #555;
+    }
+
+    .sidebar a {
+      display: block;
+      margin: 12px 0;
+      font-size: 18px;
       text-decoration: none;
       color: #0044cc;
       font-weight: bold;
     }
-    nav a:hover {
+
+    .sidebar a:hover {
       text-decoration: underline;
     }
-    .welcome {
-      display: flex;
-      gap: 30px;
-      align-items: flex-start;
-      margin-bottom: 40px;
+
+    /* MAIN CONTENT */
+    .content {
+      margin-left: 300px;
+      padding: 40px;
+      max-width: 900px;
     }
-    .welcome img {
-      width: 220px;
-      border-radius: 6px;
-      box-shadow: 0 0 8px rgba(0,0,0,0.2);
+
+    h1 {
+      font-size: 32px;
+      margin-bottom: 10px;
     }
-    h1 { font-size: 34px; margin-bottom: 10px; }
-    h2 { margin-top: 40px; }
-    .section { margin-bottom: 30px; }
-    a { color: #0044cc; }
+
+    p {
+      font-size: 17px;
+      line-height: 1.6;
+    }
   </style>
 </head>
 
 <body>
 
-<nav>
-  <a href="#home">Home</a>
-  <a href="#cv">CV</a>
-  <a href="#research">Research</a>
-  <a href="#contact">Contact</a>
-</nav>
+  <!-- SIDEBAR -->
+  <div class="sidebar">
+    <img src="carl BOTCHWEY PROFILE PICTURE.jpg" alt="Carl Botchwey">
+    <h2>Carl Botchwey</h2>
+    <p>PhD Candidate in Accounting<br>Université Clermont Auvergne</p>
 
-<div id="home" class="welcome">
-  <img src="carl BOTCHWEY PROFILE PICTURE.jpg" alt="Carl Botchwey Portrait">
-  <div>
+    <a href="index.html">Home</a>
+    <a href="research.html">Research</a>
+    <a href="cv.html">CV</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <!-- MAIN CONTENT -->
+  <div class="content">
     <h1>Welcome!</h1>
+
     <p>
       My name is <strong>Carl Botchwey</strong>. I am a PhD Candidate in Accounting at 
-      <strong>Universitè Clermont Auvergne</strong>.
+      <strong>Université Clermont Auvergne</strong>.
     </p>
 
     <p>
       My research interests broadly encompass the reporting and dissemination of corporate 
       information in capital markets, with a particular focus on earnings management, analyst 
-      forecast behavior, institutional environments, and sustainability reporting. 
+      forecast behavior, institutional environments, and sustainability reporting.
     </p>
 
     <p>
@@ -77,93 +110,6 @@
       I am also an Associate Member of the <strong>Institute of Chartered Accountants, Ghana</strong>.
     </p>
   </div>
-</div>
-
-<hr>
-
-<div class="section">
-  <h2>Education</h2>
-
-  <p><strong>Universitè Clermont Auvergne, France</strong><br>
-  PhD in Management Science (Accounting)<br>
-  Oct 2024 – 2026/2027</p>
-
-  <p><strong>University of Cape Coast, Ghana</strong><br>
-  Master of Commerce (Accounting)<br>
-  CGPA: 3.8 / 4.0</p>
-
-  <p><strong>University of Cape Coast, Ghana</strong><br>
-  Bachelor of Commerce (Accounting)<br>
-  First Class Honours</p>
-</div>
-
-<div class="section">
-  <h2>Professional Qualification</h2>
-  <p><strong>Institute of Chartered Accountants, Ghana</strong><br>
-  Associate Member</p>
-</div>
-
-<div id="research" class="section">
-  <h2>Research Interests</h2>
-  <ul>
-    <li>Earnings Management and Financial Reporting Quality</li>
-    <li>Analyst Forecast Behavior and Information Environment</li>
-    <li>Cross-Listing, Institutional Environment, and Financial Transparency</li>
-    <li>Earnings Announcements and Market Reactions</li>
-    <li>Sustainability Accounting and Integrated Reporting</li>
-  </ul>
-</div>
-
-<div id="working-papers" class="section">
-  <h2>Working Papers</h2>
-
-  <h3>1. Market Reaction to Earnings Announcements News of Cross-Listings: A Comparative Analysis of European Firms and Their Sponsored ADRs</h3>
-  <p><strong>(Carl Botchwey and François Aubert)</strong><br>
-  Under review at <em>Review of Quantitative Finance and Accounting</em>.
-  </p>
-
-  <p>
-    <strong>Abstract:</strong> This study investigates the asymmetric market responses to earnings announcements by comparing European-listed firms with their sponsored American Depositary Receipts (ADRs). Leveraging a novel paired-sample design, we control for firm fundamentals to isolate the effect of institutional and regulatory environments on investor behavior. Our analysis focuses on earnings surprise and earnings management and their impact on cumulative market-adjusted returns (CMAR) over the earnings announcement window.
-  </p>
-
-  <p>
-    ADRs elicit significantly stronger positive reactions to earnings surprises and more severe penalizations for earnings management relative to their European counterparts. Our results are robust to accounting standard alignment (IFRS and U.S. GAAP). The study reveals that differences in market reaction stem primarily from investor composition, legal enforcement and disclosure environment. In addition, it provides empirical support for both the Bonding Hypothesis and Investor Recognition Hypothesis. It highlights the role of U.S. institutional frameworks in amplifying investor sensitivity to earnings quality. Our results carry implications for cross-listed firms, global investors, and policymakers aiming to harmonize financial reporting and governance standards across capital markets.
-  </p>
-
-  <h3>2. Pre-disclosure Information Asymmetry and Cross-Listings</h3>
-  <p><strong>(Carl Botchwey and François Aubert)</strong></p>
-
-  <p>
-    <strong>Abstract:</strong> This study examines whether listing venue influences financial analysts’ forecasting behavior by comparing U.S.-listed sponsored American Depositary Receipts (ADRs) with the European-listed shares of the same firm. To isolate institutional effects from firm-specific heterogeneity, we employ a within-firm paired design that analyses analyst forecasts for identical firm-year observations across listing venues.
-  </p>
-
-  <p>
-    The results indicate that analyst forecasts associated with ADRs exhibit modestly higher forecast accuracy and substantially lower forecast disagreement than forecasts associated with the corresponding European listings. Both forecast range and forecast dispersion are lower for ADRs, indicating stronger convergence in analyst expectations within the U.S. cross-listed environment.
-  </p>
-
-  <p>
-    Overall, the results indicate that U.S. cross-listing is associated with modest improvements in forecast accuracy and substantially greater consensus among analysts. However, the evidence does not support the view that lower disagreement necessarily reflects a superior information environment. By distinguishing between forecast accuracy, forecast disagreement, and the underlying structure of analyst information, the study contributes to the cross-listing literature and highlights the importance of separating informational convergence from behavioural convergence when evaluating the informational consequences of cross-listing.
-  </p>
-</div>
-
-<div id="work-in-progress" class="section">
-  <h2>Work in Progress</h2>
-  <ul>
-    <li>Analyst Forecast Revisions and Consensus Formation in Cross-listed Environments</li>
-    <li>Loss of Sell-Side Analyst Coverage and Sustainability Commitments</li>
-  </ul>
-</div>
-  
-<div id="cv" class="section">
-  <h2>Curriculum Vitae</h2>
-  <p>You can download my full CV below:</p>
-  <p><a href="Carl Botchwey Resume.pdf" download><strong>📄 Download CV (PDF)</strong></a></p>
-</div>
-
-<div id="contact" class="section">
-  <h2>Contact</h2>
-  <p>Email: <a href="mailto:carlbotchwey@gmail.com">carlbotchwey@gmail.com</a></p>
-</div>
 
 </body>
 </html>
