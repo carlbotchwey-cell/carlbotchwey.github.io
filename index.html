@@ -11,6 +11,28 @@
       background: #f7f7f7;
     }
 
+    /* TOP NAVIGATION BAR */
+    .topnav {
+      position: fixed;
+      top: 0;
+      right: 0;
+      background: white;
+      padding: 15px 20px;
+      z-index: 1000;
+    }
+
+    .topnav a {
+      margin-left: 20px;
+      font-size: 18px;
+      text-decoration: none;
+      color: #0044cc;
+      font-weight: bold;
+    }
+
+    .topnav a:hover {
+      text-decoration: underline;
+    }
+
     /* SIDEBAR */
     .sidebar {
       width: 260px;
@@ -20,6 +42,7 @@
       position: fixed;
       border-right: 1px solid #ddd;
       box-shadow: 2px 0 5px rgba(0,0,0,0.05);
+      margin-top: 60px; /* pushes sidebar down below top nav */
     }
 
     .sidebar img {
@@ -39,24 +62,12 @@
       color: #555;
     }
 
-    .sidebar a {
-      display: block;
-      margin: 12px 0;
-      font-size: 18px;
-      text-decoration: none;
-      color: #0044cc;
-      font-weight: bold;
-    }
-
-    .sidebar a:hover {
-      text-decoration: underline;
-    }
-
     /* MAIN CONTENT */
     .content {
       margin-left: 300px;
       padding: 40px;
       max-width: 900px;
+      margin-top: 60px; /* pushes content down below top nav */
     }
 
     h1 {
@@ -73,16 +84,19 @@
 
 <body>
 
+  <!-- TOP NAVIGATION BAR -->
+  <div class="topnav">
+    <a href="index.html">Home</a>
+    <a href="research.html">Research</a>
+    <a href="cv.html">CV</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
   <!-- SIDEBAR -->
   <div class="sidebar">
     <img src="carl BOTCHWEY PROFILE PICTURE.jpg" alt="Carl Botchwey">
     <h2>Carl Botchwey</h2>
     <p>PhD Candidate in Accounting<br>Université Clermont Auvergne</p>
-
-    <a href="index.html">Home</a>
-    <a href="research.html">Research</a>
-    <a href="cv.html">CV</a>
-    <a href="contact.html">Contact</a>
   </div>
 
   <!-- MAIN CONTENT -->
@@ -91,7 +105,7 @@
 
     <p>
       My name is <strong>Carl Botchwey</strong>. I am a PhD Candidate in Accounting at 
-      <strong>Université Clermont Auvergne</strong>.
+      <strong>Université Clermont Auvergne,France</strong>.
     </p>
 
     <p>
